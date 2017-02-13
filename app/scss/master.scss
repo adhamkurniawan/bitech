@@ -1,0 +1,35 @@
+$positive: #1253cf;
+$calm: #317ec2;
+$dark: #252d33;
+$light_dark: #7c7e80;
+$white: #fff;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.padding-top {
+  padding-top: 2em;
+}
+
+.banner {
+  background: $positive;
+  height: 662px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  .navbar-transparent {
+    background: transparent;
+    box-shadow: none;
+  }
+  nav ul li {
+    &:hover {
+      background: transparent;
+    }
+  }
+  .banner-art {
+    width: 100%;
+    position: absolute;
+    top: -1em;
+  }
+}

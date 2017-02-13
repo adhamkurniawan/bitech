@@ -1,0 +1,21 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.padding-top {
+  padding-top: 2em; }
+
+.banner {
+  background: #1253cf;
+  height: 662px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  .banner .navbar-transparent {
+    background: transparent;
+    box-shadow: none; }
+  .banner nav ul li:hover {
+    background: transparent; }
+  .banner .banner-art {
+    width: 100%;
+    position: absolute;
+    top: -1em; }
