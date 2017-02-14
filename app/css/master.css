@@ -16,27 +16,94 @@ body {
     height: 1px;
     background: 1px #fff;
     position: absolute;
-    top: 23em; }
-  .banner .circle-list {
-    list-style: none;
-    padding: 0;
+    top: 23em;
+    z-index: 1; }
+  .banner .main-wrapper-bullet {
+    position: absolute;
     top: 21.7em;
-    position: absolute; }
-    .banner .circle-list .listing {
-      display: inline; }
-      .banner .circle-list .listing .bullet {
-        width: 10px;
-        height: 10px;
-        border-radius: 100%;
-        background: 1px #fff;
-        margin-left: 13.5px; }
-      .banner .circle-list .listing p {
-        color: #fff;
-        margin-top: 5px; }
+    left: 3em;
+    list-style: none;
+    z-index: 10; }
+    .banner .main-wrapper-bullet .list-bullet {
+      display: inline-block; }
+    .banner .main-wrapper-bullet .bullet {
+      width: 10px;
+      height: 10px;
+      background: white;
+      border-radius: 100%; }
+    .banner .main-wrapper-bullet .list-bullet-p {
+      margin-left: -1.1em;
+      position: relative; }
+      .banner .main-wrapper-bullet .list-bullet-p p {
+        color: white;
+        font-weight: 300; }
+      .banner .main-wrapper-bullet .list-bullet-p .centering-mir {
+        margin-left: -1em; }
+  .banner .main-wrapper-bullet-border {
+    position: absolute;
+    top: 21.5em;
+    left: 3em;
+    list-style: none;
+    z-index: 10; }
+    .banner .main-wrapper-bullet-border .list-bullet {
+      display: inline-block; }
+    .banner .main-wrapper-bullet-border .main-bullet {
+      width: 16px;
+      height: 16px;
+      border: 2px solid white;
+      background: none;
+      border-radius: 100%; }
+    .banner .main-wrapper-bullet-border .bullet {
+      width: 7px;
+      height: 7px;
+      top: 4px;
+      left: 4.1px;
+      position: absolute;
+      background: white;
+      border-radius: 100%; }
+    .banner .main-wrapper-bullet-border .list-bullet-p {
+      margin-left: -1em;
+      margin-top: -6px;
+      position: relative; }
+      .banner .main-wrapper-bullet-border .list-bullet-p p {
+        color: white;
+        font-weight: 700; }
+  .banner .ltr-first {
+    margin-left: 10em; }
+  .banner .ltr {
+    margin-left: 58em; }
+  .banner .ltrc {
+    margin-left: 52em; }
   .banner .navbar-transparent {
     background: transparent;
     box-shadow: none; }
   .banner nav ul li:hover {
     background: transparent; }
   .banner .banner-art {
-    z-index: 1; }
+    width: 100%;
+    height: auto;
+    content: url("../img/banner_art.png");
+    position: relative;
+    margin-top: -45em;
+    z-index: 0; }
+  .banner .wrapper-title-banner {
+    margin-left: 100px;
+    z-index: 14;
+    position: relative; }
+    .banner .wrapper-title-banner .title-banner {
+      font-size: 22px;
+      margin-bottom: -5px;
+      font-weight: 500; }
+    .banner .wrapper-title-banner .tag-title-banner {
+      font-size: 14px;
+      font-weight: 300; }
+
+.wrapper-card {
+  margin-top: 9em;
+  margin-left: 6em;
+  z-index: 4;
+  position: relative; }
+  .wrapper-card .lg-card {
+    content: url("../img/lg_card.png");
+    width: 50%;
+    height: 100%; }

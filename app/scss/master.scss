@@ -25,26 +25,78 @@ body {
     background: 1px $white;
     position: absolute;
     top: 23em;
+    z-index: 1;
   }
-  .circle-list {
-    list-style: none;
-    padding: 0;
-    top: 21.7em;
+  .main-wrapper-bullet {
     position: absolute;
-    .listing {
-      display: inline;
-      .bullet {
-        width: 10px;
-        height: 10px;
-        border-radius: 100%;
-        background: 1px $white;
-        margin-left: 13.5px;
-      }
+    top: 21.7em;
+    left: 3em;
+    list-style: none;
+    z-index: 10;
+    .list-bullet {
+      display: inline-block;
+    }
+    .bullet {
+      width: 10px;
+      height: 10px;
+      background: white;
+      border-radius: 100%;
+    }
+    .list-bullet-p {
+      margin-left: -1.1em;
+      position: relative;
       p {
-        color: $white;
-        margin-top: 5px;
+        color: white;
+        font-weight: 300;
+      }
+      .centering-mir {
+        margin-left: -1em;
       }
     }
+  }
+  .main-wrapper-bullet-border {
+    position: absolute;
+    top: 21.5em;
+    left: 3em;
+    list-style: none;
+    z-index: 10;
+    .list-bullet {
+      display: inline-block;
+    }
+    .main-bullet {
+      width: 16px;
+      height: 16px;
+      border: 2px solid white;
+      background: none;
+      border-radius: 100%;
+    }
+    .bullet {
+      width: 7px;
+      height: 7px;
+      top: 4px;
+      left: 4.1px;
+      position: absolute;
+      background: white;
+      border-radius: 100%;
+    }
+    .list-bullet-p {
+      margin-left: -1em;
+      margin-top: -6px;
+      position: relative;
+      p {
+        color: white;
+        font-weight: 700;
+      }
+    }
+  }
+  .ltr-first {
+    margin-left: 10em;
+  }
+  .ltr {
+    margin-left: 58em;
+  }
+  .ltrc {
+    margin-left: 52em;
   }
   .navbar-transparent {
     background: transparent;
@@ -56,6 +108,37 @@ body {
     }
   }
   .banner-art {
-    z-index: 1;
+    width: 100%;
+    height: auto;
+    content: url('../img/banner_art.png');
+    position: relative;
+    margin-top: -45em;
+    z-index: 0;
+  }
+  .wrapper-title-banner {
+    margin-left: 100px;
+    z-index: 14;
+    position: relative;
+    .title-banner {
+      font-size: 22px;
+      margin-bottom: -5px;
+      font-weight: 500;
+    }
+    .tag-title-banner {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
+
+.wrapper-card {
+  margin-top: 9em;
+  margin-left: 6em;
+  z-index: 4;
+  position: relative;
+  .lg-card {
+    content: url('../img/lg_card.png');
+    width: 50%;
+    height: 100%;
   }
 }
