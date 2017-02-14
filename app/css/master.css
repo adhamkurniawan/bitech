@@ -10,12 +10,33 @@ body {
   position: relative;
   z-index: 1;
   overflow: hidden; }
+  .banner:before {
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background: 1px #fff;
+    position: absolute;
+    top: 23em; }
+  .banner .circle-list {
+    list-style: none;
+    padding: 0;
+    top: 21.7em;
+    position: absolute; }
+    .banner .circle-list .listing {
+      display: inline; }
+      .banner .circle-list .listing .bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: 1px #fff;
+        margin-left: 13.5px; }
+      .banner .circle-list .listing p {
+        color: #fff;
+        margin-top: 5px; }
   .banner .navbar-transparent {
     background: transparent;
     box-shadow: none; }
   .banner nav ul li:hover {
     background: transparent; }
   .banner .banner-art {
-    width: 100%;
-    position: absolute;
-    top: -1em; }
+    z-index: 1; }

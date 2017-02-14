@@ -18,6 +18,34 @@ body {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  &:before {
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background: 1px $white;
+    position: absolute;
+    top: 23em;
+  }
+  .circle-list {
+    list-style: none;
+    padding: 0;
+    top: 21.7em;
+    position: absolute;
+    .listing {
+      display: inline;
+      .bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: 1px $white;
+        margin-left: 13.5px;
+      }
+      p {
+        color: $white;
+        margin-top: 5px;
+      }
+    }
+  }
   .navbar-transparent {
     background: transparent;
     box-shadow: none;
@@ -28,8 +56,6 @@ body {
     }
   }
   .banner-art {
-    width: 100%;
-    position: absolute;
-    top: -1em;
+    z-index: 1;
   }
 }
