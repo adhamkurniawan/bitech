@@ -10,6 +10,10 @@ body {
 .padding-top {
   padding-top: 2em; }
 
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 85%; } }
+
 .banner {
   background: #1253cf;
   height: 662px;
@@ -164,3 +168,18 @@ body {
     background: #317ec2; }
   .btn-primary:focus {
     background: #317ec2; }
+
+.get-card {
+  background: #fafafa;
+  padding: 2em 0; }
+  .get-card .wrapper-title {
+    padding-bottom: 3em; }
+    .get-card .wrapper-title .title-card {
+      font-size: 36px;
+      font-weight: 500; }
+  .get-card .tag-card {
+    font-size: 28px;
+    font-weight: 500; }
+  .get-card .big-icon {
+    font-size: 100px;
+    color: #317ec2; }

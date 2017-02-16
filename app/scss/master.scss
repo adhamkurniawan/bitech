@@ -3,6 +3,7 @@ $calm: #317ec2;
 $dark: #252d33;
 $light_dark: #7c7e80;
 $white: #fff;
+$light: #fafafa;
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -18,6 +19,12 @@ body {
 
 .padding-top {
   padding-top: 2em;
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+      width: 85%;
+  }
 }
 
 // Banner Section
@@ -217,5 +224,27 @@ body {
   }
   &:focus {
     background: $calm;
+  }
+}
+
+// Section Getting Card
+
+.get-card {
+  background: $light;
+  padding: 2em 0;
+  .wrapper-title {
+    padding-bottom: 3em;
+    .title-card {
+      font-size: 36px;
+      font-weight: 500;
+    }
+  }
+  .tag-card {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .big-icon {
+    font-size: 100px;
+    color: $calm;
   }
 }
