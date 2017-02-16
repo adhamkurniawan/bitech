@@ -4,9 +4,37 @@ $dark: #252d33;
 $light_dark: #7c7e80;
 $white: #fff;
 $light: #fafafa;
+$blue_darken_1: #1e88e5;
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.light {
+  background: $light;
+}
+
+.calm-text {
+  color: $calm;
+}
+
+.dark-text {
+  color: $dark;
+}
+
+.light-dark-text {
+  color: $light_dark;
+  font-size: 600;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.border-bottom {
+  border-bottom: 2px solid $calm;
+  width: 50px;
+  line-height: 40px;
 }
 
 .capitalize {
@@ -21,10 +49,31 @@ body {
   padding-top: 2em;
 }
 
-@media only screen and (min-width: 993px) {
-  .container {
-      width: 85%;
+.container-fluid {
+  padding: 0 45px;
+}
+
+.btn-fab-down {
+  background: $light;
+  border: 1px solid $calm;
+  i {
+    color: $calm;
   }
+  &:hover {
+    background: $calm;
+    border: 1px solid $calm;
+    i {
+      color: $light;
+    }
+  }
+  &:focus {
+    background: $calm;
+    border: 1px solid $calm;
+  }
+}
+
+.wrapper-btn-fab {
+  margin-top: 4.35em;
 }
 
 // Banner Section
@@ -168,6 +217,7 @@ body {
   background-repeat: no-repeat;
   background-size: 750px;
   background-position: center 180px;
+  position: relative;
   .title-benefit {
     font-size: 36px;
     font-weight: 700;
@@ -231,7 +281,10 @@ body {
 
 .get-card {
   background: $light;
-  padding: 2em 0;
+  padding: 1.5em 0;
+  height: 500px;
+  border-bottom: 1px solid $calm;
+  position: relative;
   .wrapper-title {
     padding-bottom: 3em;
     .title-card {
@@ -243,8 +296,55 @@ body {
     font-size: 28px;
     font-weight: 500;
   }
+  .text-card {
+    color: $light_dark;
+    color: 400;
+    font-size: 16px;
+  }
   .big-icon {
     font-size: 100px;
     color: $calm;
+  }
+}
+
+.card-abilities {
+  padding: 6em 0 4em 0;
+  .title-abilities {
+    font-size: 36px;
+    font-weight: 500;
+    color: $dark;
+  }
+  .list-abilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: block;
+      h4 {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $light_dark;
+      }
+    }
+  }
+}
+
+footer.page-footer {
+  background: $light;
+  .footer-icon {
+    font-size: 20px;
+    padding-top: 16px;
+    margin-left: 10px;
+  }
+}
+
+ul:not(.browser-default) li {
+  line-height: 33px;
+}
+
+@media only screen and (max-width: 992px){
+  .container-fluid {
+    padding: 0 25px;
   }
 }

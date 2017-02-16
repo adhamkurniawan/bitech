@@ -1,6 +1,27 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
+.light {
+  background: #fafafa; }
+
+.calm-text {
+  color: #317ec2; }
+
+.dark-text {
+  color: #252d33; }
+
+.light-dark-text {
+  color: #7c7e80;
+  font-size: 600; }
+
+.bold {
+  font-weight: 500; }
+
+.border-bottom {
+  border-bottom: 2px solid #317ec2;
+  width: 50px;
+  line-height: 40px; }
+
 .capitalize {
   text-transform: capitalize; }
 
@@ -10,9 +31,25 @@ body {
 .padding-top {
   padding-top: 2em; }
 
-@media only screen and (min-width: 993px) {
-  .container {
-    width: 85%; } }
+.container-fluid {
+  padding: 0 45px; }
+
+.btn-fab-down {
+  background: #fafafa;
+  border: 1px solid #317ec2; }
+  .btn-fab-down i {
+    color: #317ec2; }
+  .btn-fab-down:hover {
+    background: #317ec2;
+    border: 1px solid #317ec2; }
+    .btn-fab-down:hover i {
+      color: #fafafa; }
+  .btn-fab-down:focus {
+    background: #317ec2;
+    border: 1px solid #317ec2; }
+
+.wrapper-btn-fab {
+  margin-top: 4.35em; }
 
 .banner {
   background: #1253cf;
@@ -123,7 +160,8 @@ body {
   background: url("../img/circle.png");
   background-repeat: no-repeat;
   background-size: 750px;
-  background-position: center 180px; }
+  background-position: center 180px;
+  position: relative; }
   .benefit .title-benefit {
     font-size: 36px;
     font-weight: 700;
@@ -171,7 +209,10 @@ body {
 
 .get-card {
   background: #fafafa;
-  padding: 2em 0; }
+  padding: 1.5em 0;
+  height: 500px;
+  border-bottom: 1px solid #317ec2;
+  position: relative; }
   .get-card .wrapper-title {
     padding-bottom: 3em; }
     .get-card .wrapper-title .title-card {
@@ -180,6 +221,42 @@ body {
   .get-card .tag-card {
     font-size: 28px;
     font-weight: 500; }
+  .get-card .text-card {
+    color: #7c7e80;
+    color: 400;
+    font-size: 16px; }
   .get-card .big-icon {
     font-size: 100px;
     color: #317ec2; }
+
+.card-abilities {
+  padding: 6em 0 4em 0; }
+  .card-abilities .title-abilities {
+    font-size: 36px;
+    font-weight: 500;
+    color: #252d33; }
+  .card-abilities .list-abilities {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .card-abilities .list-abilities li {
+      display: block; }
+      .card-abilities .list-abilities li h4 {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #7c7e80; }
+
+footer.page-footer {
+  background: #fafafa; }
+  footer.page-footer .footer-icon {
+    font-size: 20px;
+    padding-top: 16px;
+    margin-left: 10px; }
+
+ul:not(.browser-default) li {
+  line-height: 33px; }
+
+@media only screen and (max-width: 992px) {
+  .container-fluid {
+    padding: 0 25px; } }
