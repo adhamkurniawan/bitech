@@ -1,6 +1,12 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
+.capitalize {
+  text-transform: capitalize; }
+
+.uppercase {
+  text-transform: uppercase; }
+
 .padding-top {
   padding-top: 2em; }
 
@@ -107,3 +113,33 @@ body {
     content: url("../img/lg_card.png");
     width: 50%;
     height: 100%; }
+
+.benefit {
+  padding: 60px 0;
+  background: url("../img/circle.png");
+  background-repeat: no-repeat;
+  background-size: 750px;
+  background-position: center 180px; }
+  .benefit .title-benefit {
+    font-size: 36px;
+    font-weight: 700;
+    color: #317ec2; }
+  .benefit .content-benefit {
+    padding-top: 6em;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .benefit .content-benefit .content-title-benefit {
+      font-size: 32px;
+      font-weight: 700;
+      color: #252d33; }
+    .benefit .content-benefit .content-tag-benefit {
+      font-size: 16px;
+      font-weight: 300;
+      color: #7c7e80;
+      width: 20%; }
+    .benefit .content-benefit .row-left {
+      width: 100%;
+      float: left; }
+    .benefit .content-benefit .row-right {
+      width: 100%;
+      float: right; }

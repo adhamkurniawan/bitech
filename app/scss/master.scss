@@ -8,9 +8,19 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .padding-top {
   padding-top: 2em;
 }
+
+// Banner Section
 
 .banner {
   background: $positive;
@@ -140,5 +150,44 @@ body {
     content: url('../img/lg_card.png');
     width: 50%;
     height: 100%;
+  }
+}
+
+// Section Benefit
+
+.benefit {
+  padding: 60px 0;
+  background: url('../img/circle.png');
+  background-repeat: no-repeat;
+  background-size: 750px;
+  background-position: center 180px;
+  .title-benefit {
+    font-size: 36px;
+    font-weight: 700;
+    color: $calm;
+  }
+  .content-benefit {
+    padding-top: 6em;
+    padding-left: 20px;
+    padding-right: 20px;
+    .content-title-benefit {
+      font-size: 32px;
+      font-weight: 700;
+      color: $dark;
+    }
+    .content-tag-benefit {
+      font-size: 16px;
+      font-weight: 300;
+      color: $light_dark;
+      width: 20%;
+    }
+    .row-left {
+      width: 100%;
+      float: left;
+    }
+    .row-right {
+      width: 100%;
+      float: right;
+    }
   }
 }
