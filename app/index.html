@@ -13,9 +13,11 @@
     <div class="banner">
       <nav class="navbar-transparent padding-top">
         <div class="nav-wrapper">
+          
           <div class="container">
-            <a href="#" class="brand-logo">Bitech</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="index.html" class="brand-logo">Bitech</a>
+            <ul class="right hide-on-med-and-down">
               <li><a href="#">Home</a></li>
               <li><a href="#">Features</a></li>
               <li><a href="#">About</a></li>
@@ -23,12 +25,28 @@
               <li><a href="#">Sign In</a></li>
               <li><a href="#">Sign Up</a></li>
             </ul>
+
           </div>
+          <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+              <div class="background">
+                <img src="images/office.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+              <a href="#!name"><span class="white-text name">John Doe</span></a>
+              <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+          </ul>
         </div>
       </nav>
 
       <div class="container">
-        <ul class="main-wrapper-bullet">
+        <ul class="main-wrapper-bullet hide-on-med-and-down">
           <li class="list-bullet ltr-first">
             <div class="bullet"></div>
             <div class="list-bullet-p">
@@ -44,7 +62,7 @@
           </li>
         </ul>
 
-        <ul class="main-wrapper-bullet-border ltrc">
+        <ul class="main-wrapper-bullet-border ltrc hide-on-med-and-down">
           <li class="list-bullet">
             <div class="main-bullet">
               <div class="bullet"></div>
@@ -81,9 +99,9 @@
             <p class="content-tag-benefit">Saving for dream as simple as posting pictures from smartphone</p>
           </div>
         </div>
-        <div class="row row-2 center">
+        <div class="row row-2 center hide-on-med-and-down">
           <a href="index.html">
-            <img src="img/sm_card.png">
+            <img src="img/sm_card.png" class="responsive-img">
           </a>
         </div>
         <div class="row row-3">
@@ -142,20 +160,20 @@
             <h1 class="title-abilities">Card Abilities</h1>
             <ul class="list-abilities">
               <li>
-                <h4>3 wolf moon kickstarter glossier pok pok. Pug everyday carry farm-to-table</h4>
+                <h4>Gochujang tofu asymmetrical</h4>
               </li>
               <li>
-                <h4>3 wolf moon kickstarter glossier pok pok. Pug everyday carry farm-to-table</h4>
+                <h4>Put a bird on it viral bushwick</h4>
               </li>
               <li>
-                <h4>3 wolf moon kickstarter glossier pok. Pug everyday carry farm-to-table</h4>
+                <h4>Organic plaid slow-carb sustainable </h4>
               </li>
             </ul>
           </div>
-          <div class="col l7 offset-l1">
+          <div class="col l7 offset-l1 m7 offset-m1 s12">
             <img src="img/card_w_bg.png" class="responsive-img">
           </div>
-          <div class="col l12 center">
+          <div class="col l12 m12 s12 center">
             <a href="#" class="btn btn-primary">get started</a>
           </div>
         </div>
@@ -165,7 +183,7 @@
     <footer class="page-footer page-footer-custom">
       <div class="container-fluid">
         <div class="row">
-          <div class="col l2">
+          <div class="col l2 s6">
             <h5 class="dark-text bold">About</h5>
             <div class="border-bottom"></div>
             <ul>
@@ -174,7 +192,7 @@
               <li><a class="light-dark-text" href="#!">Hella cray synth</a></li>
             </ul>
           </div>
-          <div class="col l2">
+          <div class="col l2 s6">
             <h5 class="dark-text bold">Cards</h5>
             <div class="border-bottom"></div>
             <ul>
@@ -182,7 +200,7 @@
               <li><a class="light-dark-text" href="#!">Brunch</a></li>
             </ul>
           </div>
-          <div class="col l2">
+          <div class="col l2 s12">
             <h5 class="dark-text bold">Resources</h5>
             <div class="border-bottom"></div>
             <ul>
@@ -192,14 +210,14 @@
               <li><a class="light-dark-text" href="#!">Wolf moon kickstarter</a></li>
             </ul>
           </div>
-          <div class="col l3">
+          <div class="col l3 s6">
             <h5 class="dark-text bold">Easy Use</h5>
             <div class="border-bottom"></div>
             <p>
               Brunch gastropub cray, 90's listicle copper mug succulents cronut synth pour-over crucifix. Hella cray synth, tousled brooklyn kombucha roof party PBR&amp;B
             </p>
           </div>
-          <div class="col l3">
+          <div class="col l3 s6">
             <h5 class="dark-text bold">Planning &amp; Investments</h5>
             <div class="border-bottom"></div>
             <p>
@@ -211,7 +229,7 @@
       <div class="footer-copyright footer-copyright-custom">
         <div class="container-fluid">
           <div class="row">
-            <div class="col l12 dark-text">
+            <div class="col l12 s12 dark-text">
               © 2017 Adham Kurniawan
               <a class="right" href="#!"><i class="fa fa-facebook-square blue-text text-darken-3 footer-icon"></i></a>
               <a class="right" href="#!"><i class="fa fa-twitter-square light-blue-text text-lighten-3 footer-icon"></i></a>
